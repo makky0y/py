@@ -1,4 +1,4 @@
-# Find quotient ring (Z/mZ)*/<p>
+# Find quotient group (Z/mZ)*/<p>
 # the list of cosets is displayed in sorted order if isSort=1  
 #!/usr/bin/python
 from fractions import gcd
