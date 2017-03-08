@@ -6,7 +6,7 @@ from fractions import gcd
 
 isSort=0
 m=257
-p=2
+p=3
 cg_p=[]
 zmStar=[]
 
@@ -78,3 +78,14 @@ print("** The quotrient group (Z/mZ)*/<p>=(Z/"+str(m)+"Z)*/<"+str(p)+"> **")
 print("** consists of "+str(len(mat_coset))+" cosets **")
 for cset in mat_coset:
     print(cset)
+
+
+print("** *3 **")
+for cset in mat_coset:
+    s=[]
+    for a in cset:
+        s.append((a*3)%m)
+    if isSort==1:
+        s.sort()
+    print(s)
+
