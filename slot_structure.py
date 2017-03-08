@@ -32,9 +32,6 @@ def cyclic_g(p,m,cg_p,zmStar):
     return len(cg_p);
 
 
-isSort=0
-m=257
-
 for p in range(1,5):
     if is_prime(p):
       cg_p=[]
