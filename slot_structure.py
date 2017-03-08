@@ -35,8 +35,9 @@ def cyclic_g(p,m,cg_p,zmStar):
 isSort=0
 m=257
 
-for p in range(1,5):
+for p in range(1,137):
     if is_prime(p):
+      print(p)
       cg_p=[]
       for m in range(4096,33456):
         zmStar,msize=genZmStar(m)
@@ -44,5 +45,5 @@ for p in range(1,5):
         if not gcd(m,p) == 1:
           continue
         order=cyclic_g(p,m,cg_p,zmStar)
-        if msize/order >= 1000:
+        if msize/order >= 500:
             print(" p:" +str(p)+" m:"+str(m)+" <p>ord="+str(order)+" |(Zm*)|="+str(msize)+" #slot="+str(msize/order))
