@@ -23,8 +23,7 @@ def genZmStar(m):
 def cyclic_g(p,m,cg_p,zmStar):
     cg_p=[]
     cg_p.append(1)
-    #for a in range(1,m):
-    for a in zmStar:
+    for a in range(1,m):
       b=(p**a)%m
       if b==1:
          break
